@@ -4,6 +4,7 @@ import facebookimg from '../img/Facebook.jpg'
 import LinkedInimg from '../img/LinkedIn.png'
 import Instagram from '../img/Instagram.png'
 import Twitter from '../img/Twitter.png'
+import GitHub from '../img/GitHub.png'
 
 
 
@@ -20,10 +21,11 @@ const Footer = () => {
     </nav>
     <div class="flex gap-4">
       <a href="https://www.facebook.com/share/1BGu6RAfPy/"><img src={facebookimg} alt="Facebook" className=" bg-blue-400 h-8 w-8 h-8 w-8 " /></a>
-      <a href="https://www.linkedin.com/in/md-anir-nawaf-bishal-34aa7a239/"><img src="src/Components/img/LinkedIn.png" alt="LinkedIn" className="bg-blue-400 h-8 w-8" /></a>
-      <a href="https://github.com/AnirNawaf"><img src="src/Components/img/GitHub.png" alt="GitHub" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
-      <a href="#"><img src="src/Components/img/Instagram.png" alt="Instagram.png" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
-      <a href="#"><img src="src/Components/img/Twitter.png" alt="Twitter" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
+      <a href="https://www.linkedin.com/in/md-anir-nawaf-bishal-34aa7a239/"><img src={LinkedInimg} alt="LinkedIn" className="bg-blue-400 h-8 w-8" /></a>
+      <a href="https://github.com/AnirNawaf"><img src={GitHub} alt="GitHub" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
+
+      <a href="#"><img src={Instagram} alt="Instagram.png" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
+      <a href="#"><img src={Twitter} alt="Twitter" class=" bg-blue-400 h-8 w-8 h-8 w-8" /></a>
       
     </div>
   </footer>
