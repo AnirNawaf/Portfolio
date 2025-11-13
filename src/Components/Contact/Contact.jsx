@@ -7,7 +7,7 @@ import call_icon from '../../assets/call_icon.svg'
 
 const Contact = () => {
 
-const onSubmit = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
@@ -30,44 +30,48 @@ const onSubmit = async (event) => {
     }
   };
 
-    return (
-        <div id='contact' className='contact'>
-             <div className="contact-title">
-                <h1>Get in touch</h1>
-                <img src={theme_pattern} alt="them patan" />
-             </div>
-             <div className="contact-section">
-                <div className="contact-left">
-                    <h1>Let's talk</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet.</p>
-                    <div className="contact-details">
-                        <div className="contact-detail">
-                            <img src={mail_icon} alt="" />
-                            <p>aniirbishal08@gmail.com</p>
-                        </div>
-                       <div className="contact-detail">
-                            <img src={location_icon} alt="" />
-                            Dhaka, Bangladesh
-                        </div>
-                        <div className="contact-detail">
-                            <img src={call_icon} alt="" />
-                            +8801307304226
-                        </div>
-                    </div>
-                </div>
-                    <form onSubmit={onSubmit} className="contact-right">
-                        <label htmlFor="">Your Name</label>
-                        <input type="text" placeholder='Enter your name' name='name'/>
-                        <label htmlFor="">Your Email</label>
-                        <input type="email" placeholder='Enter your email' name='email'/>
-                        <label htmlFor="">Write your message here</label>
-                        <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
-                        <button type='submit' className="contact-submit">Submit Now</button>
-                    </form>
-             </div>
-            
+  return (
+    <div id='contact' className='contact'>
+      <div className="contact-title">
+        <h1>Get in touch</h1>
+        <img src={theme_pattern} alt="them patan" />
+      </div>
+      <div className="contact-section">
+        <div className="contact-left">
+          <h1>Let's talk</h1>
+          <p>I am always open to new opportunities and challenging projects. <br /><br />
+
+            If you have a project or collaboration you'd like to discuss, or if you simply have any questions about my work, please feel free to reach out using the email or contact form provided below. <br /> <br />
+
+            I look forward to hearing from you</p>
+          <div className="contact-details">
+            <div className="contact-detail">
+              <img src={mail_icon} alt="" />
+              <p>aniirbishal08@gmail.com</p>
+            </div>
+            <div className="contact-detail">
+              <img src={location_icon} alt="" />
+              Dhaka, Bangladesh
+            </div>
+            <div className="contact-detail">
+              <img src={call_icon} alt="" />
+              +8801307304226
+            </div>
+          </div>
         </div>
-    );
+        <form onSubmit={onSubmit} className="contact-right">
+          <label htmlFor="">Your Name</label>
+          <input type="text" placeholder='Enter your name' name='name' />
+          <label htmlFor="">Your Email</label>
+          <input type="email" placeholder='Enter your email' name='email' />
+          <label htmlFor="">Write your message here</label>
+          <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+          <button type='submit' className="contact-submit">Submit Now</button>
+        </form>
+      </div>
+
+    </div>
+  );
 };
 
 export default Contact;
